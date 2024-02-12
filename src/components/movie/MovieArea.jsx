@@ -4,9 +4,9 @@ import { motion } from "framer-motion"
 import { Pagination } from 'antd';
 
 function MovieArea() {
-
+  const apiLink = process.env.REACT_APP_API_LINK;
   function handleChange (value){
-    setNext(`http://localhost:8000/api/v1/movie/cinema-movie/?category=${id}&page=${value}`);
+    setNext(`${apiLink}/api/v1/movie/cinema-movie/?category=${id}&page=${value}`);
   };
 
   const [id, setID] = useState([]);
@@ -15,7 +15,7 @@ function MovieArea() {
   const [category, setCategory] = useState([]);
   const [page, setPage] = useState(1);
   const [count, setCount] = useState([]);
-  const [next, setNext] = useState(`http://localhost:8000/api/v1/movie/cinema-movie/?category=${id}&page=${page}`);
+  const [next, setNext] = useState(`${apiLink}/api/v1/movie/cinema-movie/?category=${id}&page=${page}`);
   useEffect(() => {
     fetch(next)
     .then(response => response.json())
@@ -23,13 +23,13 @@ function MovieArea() {
     .catch(err => console.log(err))
   }, [next])
   useEffect(() => {
-    fetch('http://localhost:8000/api/v1/category/')
+    fetch(`${apiLink}/api/v1/category/`)
     .then(response => response.json())
     .then(data => {setCategory(data)})
     .catch(err => console.log(err))
   }, [])
   useEffect(() => {
-    fetch('http://localhost:8000/api/v1/movie/cinema-movie/?category='+id)
+    fetch(`${apiLink}/api/v1/movie/cinema-movie/?category=${id}`)
     .then(response => response.json())
     .then(data => {setItems(data.results); setCount(data.count); setNextP(data.next);   setPrevP(data.previous);})
     .catch(err => console.log(err))

@@ -5,19 +5,20 @@ import { useHistory } from "react-router-dom";
 import { Pagination } from 'antd';
 
 const SearchMovie = () => {
+  const apiLink = process.env.REACT_APP_API_LINK;
     const history = useHistory();
     const result = history.location.state?.data;
     const data = result.search;
     console.log(data);
 
     function handleChange (value){
-      setNext(`http://localhost:8000/api/v1/movie/search?search=${data}&page=${value}`);
+      setNext(`${apiLink}/api/v1/movie/search?search=${data}&page=${value}`);
     };
   
     const [items, setItems] = useState([]);
     const [page, setPage] = useState(1);
     const [count, setCount] = useState([]);
-    const [next, setNext] = useState(`http://localhost:8000/api/v1/movie/search?search=${data}&page=${page}`);
+    const [next, setNext] = useState(`${apiLink}/api/v1/movie/search?search=${data}&page=${page}`);
     useEffect(() => {
       fetch(next)
       .then(response => response.json())

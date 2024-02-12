@@ -7,13 +7,14 @@ import { useHistory } from 'react-router-dom/cjs/react-router-dom';
 
 
 const MovieDetail = () => {
+  const apiLink = process.env.REACT_APP_API_LINK;
   const { id } = useParams();
   const [movie, setMovie] = useState([]);
   const [error, setError] = useState(null);
   const history = useHistory();
 
   useEffect(()=>{
-    fetch(`http://localhost:8000/api/v1/movie/${id}`)
+    fetch(`${apiLink}/api/v1/movie/${id}`)
     .then(response => response.json())
     .then(data => {setMovie(data)})
     .catch(err => setError(err))
@@ -34,7 +35,7 @@ const MovieDetail = () => {
       <div className="row align-items-center position-relative">
         <div className="col-xl-3 col-lg-4">
           <div className="movie-details-img">
-            <img src={'http://localhost:8000'+movie.image} alt="" />
+            <img src={'${apiLink}'+movie.image} alt="" />
             <a href={movie.youtube_url} className="popup-video"><img src="/img/images/play_icon.png" alt="" /></a>
           </div>
         </div>

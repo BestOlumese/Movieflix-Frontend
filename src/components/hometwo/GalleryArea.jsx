@@ -15,11 +15,12 @@ function NextArrow(props){
   );
 }
 const GalleryArea = () => {
+  const apiLink = process.env.REACT_APP_API_LINK;
 
   const [items, setItems] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:8000/api/v1/gallery/')
+    fetch(`${apiLink}/api/v1/gallery/`)
     .then(response => response.json())
     .then(data => {setItems(data);})
     .catch(err => console.log(err))

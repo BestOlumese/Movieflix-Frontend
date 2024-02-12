@@ -4,8 +4,9 @@ import { Link } from 'react-router-dom/cjs/react-router-dom.min';
 import { Pagination } from 'antd';
 
 const TvSerise = () => {
+  const apiLink = process.env.REACT_APP_API_LINK;
   function handleChange (value){
-    setNext(`http://localhost:8000/api/v1/movie/streaming-now/?category=${id}&page=${value}`);
+    setNext(`${apiLink}/api/v1/movie/streaming-now/?category=${id}&page=${value}`);
   };
 
   const [id, setID] = useState([]);
@@ -14,7 +15,7 @@ const TvSerise = () => {
   const [category, setCategory] = useState([]);
   const [page, setPage] = useState(1);
   const [count, setCount] = useState([]);
-  const [next, setNext] = useState(`http://localhost:8000/api/v1/movie/streaming-now/?category=${id}&page=${page}`);
+  const [next, setNext] = useState(`${apiLink}/api/v1/movie/streaming-now/?category=${id}&page=${page}`);
   useEffect(() => {
     fetch(next)
     .then(response => response.json())
@@ -22,13 +23,13 @@ const TvSerise = () => {
     .catch(err => console.log(err))
   }, [next])
   useEffect(() => {
-    fetch('http://localhost:8000/api/v1/category/')
+    fetch(`${apiLink}/api/v1/category/`)
     .then(response => response.json())
     .then(data => {setCategory(data)})
     .catch(err => console.log(err))
   }, [])
   useEffect(() => {
-    fetch('http://localhost:8000/api/v1/movie/streaming-now/?category='+id)
+    fetch(`${apiLink}/api/v1/movie/streaming-now/?category=${id}`)
     .then(response => response.json())
     .then(data => {setItems(data.results); setCount(data.count);})
     .catch(err => console.log(err))

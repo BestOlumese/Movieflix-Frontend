@@ -4,25 +4,25 @@ import { Link } from 'react-router-dom';
 
 
 const ComingSoon = () => {
- 
+  const apiLink = process.env.REACT_APP_API_LINK;
   const [items, setItems] = useState([]);
   const [ditems, setdItems] = useState([]);
   const [category, setCategory] = useState([]);
   const [id, setID] = useState([]);
   useEffect(() => {
-    fetch('http://localhost:8000/api/v1/movie/coming-soon/')
+    fetch(`${apiLink}/api/v1/movie/coming-soon/`)
     .then(response => response.json())
     .then(data => {setItems(data.results); setdItems(data.results)})
     .catch(err => console.log(err))
   }, [])
   useEffect(() => {
-    fetch('http://localhost:8000/api/v1/category/')
+    fetch(`${apiLink}/api/v1/category/`)
     .then(response => response.json())
     .then(data => {setCategory(data)})
     .catch(err => console.log(err))
   }, [])
   useEffect(() => {
-    fetch('http://localhost:8000/api/v1/movie/coming-soon/?category='+id)
+    fetch(`${apiLink}/api/v1/movie/coming-soon/?category=${id}`)
     .then(response => response.json())
     .then(data => {setItems(data.results)})
     .catch(err => console.log(err))

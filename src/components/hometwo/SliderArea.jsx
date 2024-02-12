@@ -5,11 +5,12 @@ import $ from "jquery";
 import 'animate.css';
 
 const SliderArea = () => {
+  const apiLink = process.env.REACT_APP_API_LINK;
 
   const [items, setItems] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:8000/api/v1/slider/')
+    fetch(`${apiLink}/api/v1/slider/`)
     .then(response => response.json())
     .then(data => {setItems(data);})
     .catch(err => console.log(err))
