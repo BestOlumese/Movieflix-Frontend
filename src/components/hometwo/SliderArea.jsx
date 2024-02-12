@@ -116,7 +116,7 @@ const SliderArea = () => {
                
                 <div className="banner-content">
                
-                    <h6 className="sub-title" data-delay=".2s">Movflx</h6>
+                    <h6 className="sub-title" data-delay=".2s">Cinemax</h6>
                    
                     <h2 className="title animate__animated animate__fadeInUp"  data-delay=".4s">{movie.title}</h2>
                   
