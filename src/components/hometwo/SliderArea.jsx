@@ -106,7 +106,7 @@ const SliderArea = () => {
                  
                   <div className="slider-img text-center text-lg-right animate__animated animate__fadeInRight"  data-delay="1s">
                  
-                    <img src={slider_image} alt="" />
+                    <img src={slider_image} className='img-fluid' style={{ width: '100%' }} alt="" />
                     
                   </div>
                  

@@ -49,7 +49,7 @@ const Footer = () => {
                       <ul className="navigation">
                         <li><Link to="/">Home</Link></li>
                         <li><Link to="/movie">cinema movie</Link></li>
-                        <li><Link to="/streaming-now">streaming now</Link></li>
+                        <li><Link to="/streaming-now">now streaming</Link></li>
                         <li><Link to="/coming-soon">coming soon</Link></li>
                       </ul>
                       <div className="footer-search">
@@ -94,7 +94,7 @@ const Footer = () => {
             <div className="row">
               <div className="col-lg-6 col-md-6">
                 <div className="copyright-text">
-                  <p>Copyright © {custom_date}  All Rights Reserved By <a href="/#">Movflx</a></p>
+                  <p>Copyright © {custom_date}  All Rights Reserved By <Link to="">Cinemax</Link></p>
                 </div>
               </div>
               <div className="col-lg-6 col-md-6">

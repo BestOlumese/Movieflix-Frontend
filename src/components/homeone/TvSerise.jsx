@@ -70,7 +70,7 @@ const TvSerise = () => {
              <motion.div layout className="col-xl-3 col-lg-4 col-sm-6 grid-item grid-sizer cat-two" key={slug}>
             <div className="movie-item mb-60">
               <motion.div layout className="movie-poster">
-                <Link to={"/movie-details/"+slug}><img src={image} alt="" /></Link>
+                <Link to={"/movie-details/"+slug}><img src={image} className='img-fluid' style={{ width: '100%' }} alt="" /></Link>
               </motion.div>
               <div className="movie-content">
                 <div className="top">

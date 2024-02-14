@@ -117,7 +117,7 @@ const HeaderTwo = () => {
                     </li>
                     <li className="menu-item-has-children"><Link to='/movie'>Cinema Movie</Link>
                     </li>
-                    <li><Link to='/streaming-now'>Streaming Now</Link></li>
+                    <li><Link to='/streaming-now'>Now Streaming</Link></li>
                     <li><Link to='/coming-soon'>Coming Soon</Link></li>
                     <li><Link to='/about'>About</Link></li>
                     <li><Link to='/contact'>contacts</Link></li>
