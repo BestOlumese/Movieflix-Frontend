@@ -108,7 +108,7 @@ const HeaderTwo = () => {
               <nav className="menu-nav show">
                 <div className="logo">
                   <Link to="/">
-                    <img src="/img/logo/logo.jpg" width={'170px'} alt="Logo" />
+                    <img src="/img/logo/logo.png" width={'170px'} alt="Logo" />
                   </Link>
                 </div>
                 <div className="navbar-wrap main-menu d-none d-lg-flex">
