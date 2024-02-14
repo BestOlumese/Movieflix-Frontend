@@ -40,7 +40,7 @@ const Footer = () => {
               <div className="row align-items-center">
                 <div className="col-lg-3">
                   <div className="footer-logo">
-                    <Link to="/"><img src="/img/logo/logo.jpg" width={'170px'} alt="" /></Link>
+                    <Link to="/"><img src="/img/logo/logo.png" width={'170px'} alt="" /></Link>
                   </div>
                 </div>
                 <div className="col-lg-9">
