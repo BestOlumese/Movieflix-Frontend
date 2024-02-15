@@ -43,7 +43,6 @@ const ComingSoonArea = () => {
           <div className="row align-items-end mb-55">
             <div className="col-lg-6">
               <div className="section-title text-center text-lg-left">
-                <span className="sub-title">POPULAR VIDEOS</span>
                 <h2 className="title">Coming Soon</h2>
               </div>
             </div>

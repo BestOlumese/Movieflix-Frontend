@@ -42,8 +42,8 @@ function MovieArea() {
       <div className="row align-items-end mb-55">
         <div className="col-lg-6">
           <div className="section-title text-center text-lg-left">
-            <span className="sub-title">cinema movie</span>
-            <h2 className="title">New Release Movies</h2>
+            <span className="sub-title">In Cinema</span>
+            <h2 className="title">Now Showing</h2>
           </div>
         </div>
       

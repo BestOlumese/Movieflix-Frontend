@@ -8,7 +8,7 @@ const Breadcrumb = () => {
       <div className="row">
         <div className="col-12">
           <div className="breadcrumb-content">
-            <h2 className="title">Streaming <span>Now</span></h2>
+            <h2 className="title">Now <span>Streaming</span></h2>
             <nav aria-label="breadcrumb">
               <ol className="breadcrumb">
                 <li className="breadcrumb-item"><Link href="/">Home</Link></li>

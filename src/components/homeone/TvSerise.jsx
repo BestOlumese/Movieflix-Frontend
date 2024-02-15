@@ -35,8 +35,7 @@ const TvSerise = () => {
       <div className="row align-items-end mb-55">
         <div className="col-lg-6">
           <div className="section-title text-center text-lg-left">
-            <span className="sub-title">cinema movie</span>
-            <h2 className="title">Popular Trending Movies</h2>
+            <h2 className="title">In Cinema</h2>
           </div>
         </div>
       
