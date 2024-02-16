@@ -69,7 +69,7 @@ const ComingSoonArea = () => {
           <div className="row tr-movie-active">
             {
                    items.map((elem)=>{
-                    const {slug,image,title,year_released,movie_quality,duration} = elem;
+                    const {slug,image,title,year_released,rating,duration} = elem;
     
               return(
     
@@ -86,7 +86,7 @@ const ComingSoonArea = () => {
                     </div>
                     <div className="bottom">
                       <ul>
-                        <li><span className="quality">{movie_quality}</span></li>
+                        <li><span className="quality">{rating}</span></li>
                         <li>
                           <span className="duration"><i className="far fa-clock" />{duration}</span>
                         </li>
