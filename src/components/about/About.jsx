@@ -8,7 +8,7 @@ const About = () => {
   return (
     <section className="contact-area contact-bg" style={{backgroundImage:'url("img/bg/contact_bg.jpg")'}}>
      <div className="container">
-      <div className="row">
+      <div className="row story">
         <h1 className="story-title">Our Story</h1>
         <p className='story-desc'>
         Cinemax Distribution Limited is a film distribution company aimed at providing integrated services to film makers and industry stakeholders as a whole.
