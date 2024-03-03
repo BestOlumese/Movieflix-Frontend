@@ -66,6 +66,59 @@ const About = () => {
            </p>
          </div>
        </div>
+       <div className="row spacer">
+         <div className="col-xl-4 col-lg-5">
+           <div className="img-container">
+            <img className='owner' src='/img/about/owner-3.png' />
+           </div>
+         </div>
+         <div className="col-xl-8 col-lg-7">
+           <h1 className='owner-title'>Jadesola Koya<br/> Legal/HR Executive</h1>
+           <p className="owner-desc">
+           Jadesola is a dynamic and skilled legal professional with over 7 years of experience and a proven track record of success in a variety of practice areas. She is proficient in contract drafting, negotiation, and review, ensuring that all interests are protected and agreements are legally sound.
+          <br/> <br/>
+
+          Her core areas of practice include corporate law and commercial law, civil litigation, compliance and regulatory advisory, IT, fintech, and entertainment law.
+          <br/><br/>
+
+          She also has experience in human resource management, with her most recent role being a Legal/HR Executive. She has drafted and negotiated various international commercial contracts and advised on the corporate formation and governance of a new startup fintech company. Jadesola has a Master's degree (in view) from the University of Lagos.
+
+
+           </p>
+         </div>
+       </div>
+       <div className="row spacer">
+         <div className="col-xl-4 col-lg-5">
+           <div className="img-container">
+            <img className='owner' src='/img/about/owner-4.png' />
+           </div>
+         </div>
+         <div className="col-xl-8 col-lg-7">
+           <h1 className='owner-title'>Ifeyinwa Okolie<br/> Accountant</h1>
+           <p className="owner-desc">
+           Ifeyinwa is a Result-oriented Accountant with over 4 years combined experience in financial accounting, financial management, audit and internal control. She is skilled in developing and maintaining accounting books, analyzing and preparing financial reports for management decision making.
+          <br/> <br/>
+
+          She has worked in organizations like West Gate Technologies and is in her final stage to become an Associate Member of the Institute of Chartered Accountants of Nigeria.
+          She is currently an Account executive for Cinemax Distribution Limited.
+
+
+           </p>
+         </div>
+       </div>
+       <div className="row spacer">
+         <div className="col-xl-4 col-lg-5">
+           <div className="img-container">
+            <img className='owner' src='/img/about/owner-5.png' />
+           </div>
+         </div>
+         <div className="col-xl-8 col-lg-7">
+           <h1 className='owner-title'>Eric Okwara<br/> Logistics Officer</h1>
+           <p className="owner-desc">
+           Eric is an ambitious, hardworking, solution-focused Logistics Officer with over 5 years of experience in Logistics. He is a team player, strong communicator with a customer- centric approach while ensuring seamless Logistics coordination and timely service delivery at a reduced cost. improving efficiency, result oriented.
+           </p>
+         </div>
+       </div>
        <div className="row">
         <div className="col-xl-12">
         <h1 className='service-title'>Our Services</h1>

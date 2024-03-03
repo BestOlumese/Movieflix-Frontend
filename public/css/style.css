@@ -3117,7 +3117,7 @@ label {
     background: #fff !important;
     color: black !important;
     font-size: 30px !important;
-    display: none;
+    display: none !important;
 }
 
 .slick-arrow.slick-next {
@@ -3129,4 +3129,8 @@ label {
 
 .story {
     padding: 0 20px !important;
+}
+
+.img-container {
+    width: 80%;
 }
