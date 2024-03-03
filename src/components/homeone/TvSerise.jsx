@@ -42,7 +42,7 @@ const TvSerise = () => {
       
       </div>
 
-      <div className="row justify-content-center">
+      {/* <div className="row justify-content-center">
         <div className="col-lg-8">
           <div className="tr-movie-menu2-active text-center">
             <button className={(items == ditems) ? 'active' : ''} data-filter="*" onClick={()=> {setItems(ditems); setCatID(null);}}>All Movies</button>
@@ -56,7 +56,7 @@ const TvSerise = () => {
             }
           </div>
         </div>
-      </div>
+      </div> */}
 
 
       <div className="row tr-movie-active">

@@ -55,7 +55,7 @@ const SliderArea = () => {
                   slidesToShow: 1,
                   slidesToScroll: 1,
                   speed:500,
-                  arrows: false,
+                  arrows: true,
                   infinite: true,
               }
           },
@@ -64,7 +64,7 @@ const SliderArea = () => {
               settings: {
                   slidesToShow: 1,
                   speed:500,
-                  arrows: false,
+                  arrows: true,
                   autoplay:true,
                   slidesToScroll: 1
               }
@@ -75,7 +75,7 @@ const SliderArea = () => {
                   slidesToShow: 1,
                   speed:500,
                   slidesToScroll: 1,
-                  arrows: false,
+                  arrows: true,
               }
           },
           {
@@ -85,7 +85,7 @@ const SliderArea = () => {
                   slidesToScroll: 1,
                   speed:500,
                   autoplay:true,
-                  arrows: false,
+                  arrows: true,
               }
           },
       ]

@@ -3112,3 +3112,16 @@ label {
     text-align: center;
     font-weight: 400;
 }
+
+.slick-arrow.slick-prev {
+    background: #fff !important;
+    color: black !important;
+    font-size: 30px !important;
+}
+
+.slick-arrow.slick-next {
+    background: #fff !important;
+    color: black !important;
+    font-size: 30px !important;
+    float: right;
+}
