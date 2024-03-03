@@ -37,6 +37,9 @@ const TvSerise = () => {
         <div className="col-lg-6">
           <div className="section-title text-center text-lg-left">
             <h2 className="title">In Cinemas</h2>
+            {
+              (items.length == 0) && (<p className='no-movie'>No Movies Available</p>)
+            }
           </div>
         </div>
       
@@ -60,7 +63,7 @@ const TvSerise = () => {
 
 
       <div className="row tr-movie-active">
-        {
+        {(items) &&
                items.map((elem)=>{
                 const {slug,image,title,year_released,rating,duration} = elem;
 
@@ -99,8 +102,9 @@ const TvSerise = () => {
            
           )
         })
-
-      }
+          
+        }
+        
       </div>
      
     </div>

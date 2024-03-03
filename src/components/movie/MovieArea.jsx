@@ -44,12 +44,15 @@ function MovieArea() {
         <div className="col-lg-6">
           <div className="section-title text-center text-lg-left">
             <h2 className="title">In Cinemas</h2>
+            {
+              (items.length == 0) && (<p className='no-movie'>No Movies Available</p>)
+            }
           </div>
         </div>
       
       </div>
 
-      <div className="row justify-content-center">
+      {/* <div className="row justify-content-center">
         <div className="col-lg-8">
           <div className="tr-movie-menu2-active text-center">
             <button className={(items == ditems) ? 'active' : ''} data-filter="*" onClick={()=> {setItems(ditems); setCatID(null);}}>All Movies</button>
@@ -63,7 +66,7 @@ function MovieArea() {
             }
           </div>
         </div>
-      </div>
+      </div> */}
 
 
       <div className="row tr-movie-active">

@@ -45,8 +45,8 @@ const Footer = () => {
                     <nav>
                       <ul className="navigation">
                         <li><Link to="/">Home</Link></li>
-                        <li><Link to="/movie">cinema movie</Link></li>
-                        <li><Link to="/streaming-now">now streaming</Link></li>
+                        <li><Link to="/in-cinemas">In Cinemas</Link></li>
+                        <li><Link to="/now-streaming">now streaming</Link></li>
                         <li><Link to="/coming-soon">coming soon</Link></li>
                       </ul>
                       <div className="footer-search">

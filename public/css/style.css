@@ -3134,3 +3134,9 @@ label {
 .img-container {
     width: 80%;
 }
+
+p.no-movie  {
+    color: rgb(206, 206, 206) !important;
+    font-size: 24px;
+    margin-top: 25px;
+}

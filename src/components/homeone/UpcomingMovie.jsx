@@ -39,6 +39,9 @@ const UpcomingMovie = () => {
         <div className="col-lg-6">
           <div className="section-title text-center text-lg-left">
             <h2 className="title">Now Streaming</h2>
+            {
+              (items.length == 0) && (<p className='no-movie'>No Movies Available</p>)
+            }
           </div>
         </div>
       
