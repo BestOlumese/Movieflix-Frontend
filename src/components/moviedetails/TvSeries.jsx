@@ -10,6 +10,7 @@ const TvSerise = () => {
   };
 
   const [id, setID] = useState([]);
+  const [catid, setCatID] = useState([]);
   const [items, setItems] = useState([]);
   const [ditems, setdItems] = useState([]);
   const [category, setCategory] = useState([]);
@@ -51,12 +52,12 @@ const TvSerise = () => {
       <div className="row justify-content-center">
         <div className="col-lg-8">
           <div className="tr-movie-menu2-active text-center">
-            <button className="active" data-filter="*" onClick={()=> {setItems(ditems); setID([]); setPage(1);}}>TV Shows</button>
+            <button className={(items == ditems) ? 'active' : ''} data-filter="*" onClick={()=> {setItems(ditems); setCatID(null);}}>All Movies</button>
             {
               category.map((elem) => {
                 const { id, name } = elem;
                 return (
-                  <button  data-filter=".cat-two" onClick={()=> {setID(id);setPage(1)}}>{name}</button>
+                  <button className={(id == catid) ? 'active' : ''}  data-filter=".cat-two" onClick={()=> {setID(id); setCatID(id)}}>{name}</button>
                 );
               })
             }

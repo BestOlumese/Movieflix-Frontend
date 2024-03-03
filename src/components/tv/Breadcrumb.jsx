@@ -12,7 +12,7 @@ const Breadcrumb = () => {
             <nav aria-label="breadcrumb">
               <ol className="breadcrumb">
                 <li className="breadcrumb-item"><Link href="/">Home</Link></li>
-                <li className="breadcrumb-item active" aria-current="page">Streaming Now</li>
+                <li className="breadcrumb-item active" aria-current="page">Now Streaming</li>
               </ol>
             </nav>
           </div>

@@ -3052,10 +3052,30 @@ label {
     border-radius: 10px;
 }
 
+.story-title  {
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-size: 45px;
+}
+
+.story-desc {
+    font-size: 20px !important;
+    margin-top: 20px !important;
+    font-weight: 400;
+    margin-bottom: 150px;
+}
+
+.team {
+    text-align: center;
+    font-weight: 500;
+    font-size: 45px;
+    margin-bottom: 70px;
+}
+
 .owner-title {
-    font-weight: 800 !important;
+    font-weight: 600 !important;
     letter-spacing: 1.5px !important;
-    font-size: 50px !important;
+    font-size: 30px !important;
 }
 
 .owner-desc {
@@ -3064,10 +3084,15 @@ label {
     font-weight: 400;
 }
 
+.spacer {
+    margin-top: 100px !important;
+}
+
 .service-title {
     margin-top: 150px !important;
     margin-bottom: 50px !important;
-    font-size: 50px;
+    font-weight: 500;
+    font-size: 45px;
     text-align: center;
 }
 
@@ -3084,6 +3109,6 @@ label {
 .box > p {
     font-size: 18px !important;
     margin-top: 20px !important;
-    text-align: justify;
+    text-align: center;
     font-weight: 400;
 }

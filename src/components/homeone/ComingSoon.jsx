@@ -9,6 +9,7 @@ const ComingSoon = () => {
   const [ditems, setdItems] = useState([]);
   const [category, setCategory] = useState([]);
   const [id, setID] = useState([]);
+  const [catid, setCatID] = useState([]);
   useEffect(() => {
     fetch(`${apiLink}/api/v1/movie/coming-soon/`)
     .then(response => response.json())
@@ -44,12 +45,12 @@ const ComingSoon = () => {
       <div className="row justify-content-center">
         <div className="col-lg-8">
           <div className="tr-movie-menu2-active text-center">
-            <button className="active" data-filter="*" onClick={()=> setItems(ditems)}>TV Shows</button>
+            <button className={(items == ditems) ? 'active' : ''} data-filter="*" onClick={()=> {setItems(ditems); setCatID(null);}}>All Movies</button>
             {
               category.map((elem) => {
                 const { id, name } = elem;
                 return (
-                  <button  data-filter=".cat-two" onClick={()=> setID(id)}>{name}</button>
+                  <button className={(id == catid) ? 'active' : ''}  data-filter=".cat-two" onClick={()=> {setID(id); setCatID(id)}}>{name}</button>
                 );
               })
             }

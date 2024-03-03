@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom/cjs/react-router-dom.min';
 import { useHistory } from 'react-router-dom';
 
 
-const HeaderTwo = () => {
+const HeaderTwo = ({ pagemenu }) => {
 
   const [formData, setFormData] = useState({});
   const history = useHistory();
@@ -15,10 +15,7 @@ const HeaderTwo = () => {
       ...formData // Any additional form data object here
     };
     history.push({
-      pathname: '/search/',
-      state: {
-        data: dataToSubmit,
-      },
+      pathname: '/search/'+dataToSubmit.search
     }); // Redirect to new page
   }
 
@@ -113,14 +110,14 @@ const HeaderTwo = () => {
                 </div>
                 <div className="navbar-wrap main-menu d-none d-lg-flex">
                   <ul className="navigation">
-                    <li className="active menu-item-has-children"><Link to="/">Home</Link>
+                    <li className={`${(pagemenu == 'home') ? 'active' : ''} menu-item-has-children`}><Link to="/">Home</Link>
                     </li>
-                    <li className="menu-item-has-children"><Link to='/movie'>Cinema Movie</Link>
+                    <li className={`${(pagemenu == 'in-cinemas') ? 'active' : ''} menu-item-has-children`}><Link to='/in-cinemas'>In Cinemas</Link>
                     </li>
-                    <li><Link to='/streaming-now'>Now Streaming</Link></li>
-                    <li><Link to='/coming-soon'>Coming Soon</Link></li>
-                    <li><Link to='/about'>About</Link></li>
-                    <li><Link to='/contact'>contacts</Link></li>
+                    <li className={`${(pagemenu == 'now-streaming') ? 'active' : ''} menu-item-has-children`}><Link to='/now-streaming'>Now Streaming</Link></li>
+                    <li className={`${(pagemenu == 'coming-soon') ? 'active' : ''} menu-item-has-children`}><Link to='/coming-soon'>Coming Soon</Link></li>
+                    <li className={`${(pagemenu == 'about-us') ? 'active' : ''} menu-item-has-children`}><Link to='/about-us'>About Us</Link></li>
+                    <li className={`${(pagemenu == 'contact') ? 'active' : ''} menu-item-has-children`}><Link to='/contact'>contacts</Link></li>
                   </ul>
                 </div>
                 <div className="header-action d-none d-md-block">

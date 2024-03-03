@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import SliderArea from '../components/hometwo/SliderArea'
 import HeaderTwo from '../components/HeaderTwo';
 import TvSerise from '../components/homeone/TvSerise';
@@ -8,13 +8,13 @@ import Footer from '../components/Footer';
 import GalleryArea from '../components/hometwo/GalleryArea';
 
 const HomeTwo = () => {
+  const [pagemenu, setPageMenu] = useState('home');
   return (
         <>
-                <HeaderTwo/>
+                <HeaderTwo pagemenu={pagemenu}/>
             <main>
                 <SliderArea/>
                 <UpcomingMovie/>
-                <GalleryArea/>
                 <TvSerise/>
                 <ComingSoon/>
             </main>

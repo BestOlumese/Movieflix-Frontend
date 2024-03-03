@@ -19,7 +19,6 @@ export const history = createBrowserHistory({ forceRefresh: true });
 
 function App() {
 
-
   
   useEffect(()=>{
     function preloader() {
@@ -41,14 +40,14 @@ function App() {
             <HomeTwo/>
           </Route>
           
-          <Route exact={true} path="/movie">
+          <Route exact={true} path="/in-cinemas">
             <Movie/>
           </Route>
           <Route exact={true} path="/movie-details/:id">
             <MovieDetails/>
 
           </Route>
-          <Route exact={true} path="/streaming-now">
+          <Route exact={true} path="/now-streaming">
             <TvSeries/>
 
           </Route>
@@ -61,7 +60,7 @@ function App() {
 
           </Route>
 
-          <Route exact={true} path="/about">
+          <Route exact={true} path="/about-us">
             <AboutPage/>
 
           </Route>
@@ -71,7 +70,7 @@ function App() {
 
           </Route>
 
-          <Route exact={true} path="/search/">
+          <Route exact={true} path="/search/:search">
             <Search/>
 
           </Route>

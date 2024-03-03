@@ -3,13 +3,12 @@ import { Link } from 'react-router-dom';
 import { motion } from "framer-motion"
 import { useHistory } from "react-router-dom";
 import { Pagination } from 'antd';
+import { useParams } from 'react-router-dom/cjs/react-router-dom.min';
 
 const SearchMovie = () => {
   const apiLink = process.env.REACT_APP_API_LINK;
-    const history = useHistory();
-    const result = history.location.state?.data;
-    const data = result.search;
-    console.log(data);
+  const {search} = useParams();
+  const data = search;
 
     function handleChange (value){
       setNext(`${apiLink}/api/v1/movie/search?search=${data}&page=${value}`);
@@ -33,8 +32,7 @@ const SearchMovie = () => {
         <div className="row align-items-end mb-55">
           <div className="col-lg-6">
             <div className="section-title text-center text-lg-left">
-              <span className="sub-title">ONLINE STREAMING</span>
-              <h2 className="title">New Release Movies</h2>
+              <h2 className="title">You Searched For: {data}</h2>
             </div>
           </div>
         

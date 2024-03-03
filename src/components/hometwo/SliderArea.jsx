@@ -3,6 +3,7 @@ import Slider from "react-slick";
 import "magnific-popup";
 import $ from "jquery";
 import 'animate.css';
+import { Link } from 'react-router-dom/cjs/react-router-dom';
 
 const SliderArea = () => {
   const apiLink = process.env.REACT_APP_API_LINK;
@@ -115,8 +116,6 @@ const SliderArea = () => {
                 <div className="col-lg-6">
                
                 <div className="banner-content">
-               
-                    <h6 className="sub-title" data-delay=".2s">Cinemax</h6>
                    
                     <h2 className="title animate__animated animate__fadeInUp"  data-delay=".4s">{movie.title}</h2>
                   
@@ -139,7 +138,7 @@ const SliderArea = () => {
                  
                   
                   
-                    <a href={movie.youtube_url} target='_blank' className="banner-btn btn popup-video"   data-animation="fadeInUp" data-delay=".8s"><i className="fas fa-play" /> Watch Now</a>
+                    <Link to={"/movie-details/"+movie.slug} className="banner-btn btn popup-video"   data-animation="fadeInUp" data-delay=".8s"><i className="fas fa-play" /> Watch Now</Link>
                   
 
                     </div>

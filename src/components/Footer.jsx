@@ -12,10 +12,7 @@ const Footer = () => {
       ...formData // Any additional form data object here
     };
     history.push({
-      pathname: '/search',
-      state: {
-        data: dataToSubmit,
-      },
+      pathname: '/search/'+dataToSubmit.search
     }); // Redirect to new page
   }
 
@@ -78,10 +75,10 @@ const Footer = () => {
                 <div className="col-md-5">
                   <div className="footer-social">
                     <ul>
-                      <li><a href="/#"><i className="fab fa-facebook-f" /></a></li>
-                      <li><a href="/#"><i className="fab fa-twitter" /></a></li>
-                      <li><a href="/#"><i className="fab fa-pinterest-p" /></a></li>
-                      <li><a href="/#"><i className="fab fa-linkedin-in" /></a></li>
+                      <li><a href="https://www.facebook.com/cinemaxdr" target='_blank'><i className="fab fa-facebook-f" /></a></li>
+                      <li><a href="https://twitter.com/cinemaxng" target='_blank'><i className="fab fa-twitter" /></a></li>
+                      <li><a href="https://www.instagram.com/cinemaxng" target='_blank'><i className="fab fa-instagram" /></a></li>
+                      <li><a href="https://www.linkedin.com/in/cinemax-distribution-6bbb73263?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target='_blank'><i className="fab fa-linkedin-in" /></a></li>
                     </ul>
                   </div>
                 </div>
