@@ -119,6 +119,25 @@ const About = () => {
            </p>
          </div>
        </div>
+       <div className="row spacer">
+         <div className="col-xl-4 col-lg-5">
+           <div className="img-container">
+            <img className='owner' src='/img/about/owner-6.png' />
+           </div>
+         </div>
+         <div className="col-xl-8 col-lg-7">
+           <h1 className='owner-title'>Tunbosun Akerele<br/> Creative Designer</h1>
+           <p className="owner-desc">
+           As a Creative Designer at Cinemax Distribution Limited, Akerele Tunbosun takes on the exciting role of designing creatives for the company which could be used digitally or in prints. His role also comes with graphic video creations and editing.
+           <br/><br />
+
+            Tunbosun, a graduate from the Federal University of Agriculture Abeokuta (FUNAAB), has over 10 years of experience in creating appealing designs through drawings and sketches, computer graphics designs, and video creations.
+            <br/><br />
+
+            He has over the years successfully worked with and for various establishments both in Nigeria and outside the country. Added to his expertise is his branding and content management skills.
+           </p>
+         </div>
+       </div>
        <div className="row">
         <div className="col-xl-12">
         <h1 className='service-title'>Our Services</h1>
