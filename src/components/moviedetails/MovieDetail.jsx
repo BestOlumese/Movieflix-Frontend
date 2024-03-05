@@ -35,7 +35,7 @@ const MovieDetail = () => {
       <div className="row align-items-center position-relative">
         <div className="col-xl-3 col-lg-4">
           <div className="movie-details-img">
-            <img src={apiLink+movie.image} className='img-fluid' style={{ width: '100%' }} alt="" />
+            <img src={movie.image} className='img-fluid' style={{ width: '100%' }} alt="" />
             <a href={movie.youtube_url} className="popup-video"><img src="/img/images/play_icon.png" alt="" /></a>
           </div>
         </div>
