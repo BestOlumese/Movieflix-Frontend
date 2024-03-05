@@ -3140,3 +3140,10 @@ p.no-movie  {
     font-size: 24px;
     margin-top: 25px;
 }
+
+.read-more-button {
+    text-transform: capitalize;
+    text-decoration: underline;
+    cursor: pointer;
+    margin-top: 20px;
+}

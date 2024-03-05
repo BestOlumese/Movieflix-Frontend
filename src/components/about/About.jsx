@@ -3,8 +3,22 @@ import { CiStreamOn, CiVideoOn } from "react-icons/ci";
 import { MdDisplaySettings, MdMiscellaneousServices } from "react-icons/md";
 import { BsMegaphone } from "react-icons/bs";
 import { FcStatistics } from "react-icons/fc";
+import ReadMoreReact from 'read-more-react';
 
 const About = () => {
+  const about = {
+    one: "Ope Ajayi has over 21 years business management, entertainment, advisory and entrepreneurship experience. He has a proven track record of leading successful teams, managing start-ups, expansions, and turnarounds, raising capital and debt, growing revenue and market share, and forecasting industry trends.\n\nHe spent 10 years in the financial services sector and a subsequent 11 years in the Cinemas & film Distribution. He was an Executive Director at Genesis Cinemas where he was directly responsible for overseeing the cinema business and numerous projects including the building & fit out of 11 cinemas across the country and in Cameroon.\n\nA Co-Executive producer on the blockbuster films such as Brotherhood and Ada Omo Daddy, he is also the Executive Producer and Producer of The Party.\n\nOpe is the Founder, CEO of Cinemax Distribution Limited, A company set up to distribute and provide integrated services across the various film sub-sectors from fundraising, advisory, infrastructure, local and International content sales.\n\nHe is also an alumnus of the University of Lagos and the Lagos Business School.",
+
+    two: "Onyeka is the  GM  of  Business  Operations  Cinemax Distribution Limited. With a professional background in sales,  marketing, customer service, operations project management  across diverse industries. She is a goal-oriented individual with 11+  years of varied experiences to the business with a proven track  record.\n\nRoles she has held during her career  include Head of Operations, Operations Manager, Customer Service Manager and  Business Development manager.\n\nShe is currently the GM of Business Operations & Licensing for Cinemax  Distribution Limited",
+
+    three: "Jadesola is a dynamic and skilled legal professional with over 7 years of experience and a proven track record of success in a variety of practice areas. She is proficient in contract drafting, negotiation, and review, ensuring that all interests are protected and agreements are legally sound.\n\nHer core areas of practice include corporate law and commercial law, civil litigation, compliance and regulatory advisory, IT, fintech, and entertainment law.\n\nShe also has experience in human resource management, with her most recent role being a Legal/HR Executive. She has drafted and negotiated various international commercial contracts and advised on the corporate formation and governance of a new startup fintech company. Jadesola has a Master's degree (in view) from the University of Lagos.",
+
+    four: "Ifeyinwa is a Result-oriented Accountant with over 4 years combined experience in financial accounting, financial management, audit and internal control. She is skilled in developing and maintaining accounting books, analyzing and preparing financial reports for management decision making.\n\nShe has worked in organizations like West Gate Technologies and is in her final stage to become an Associate Member of the Institute of Chartered Accountants of Nigeria.\n\nShe is currently an Account executive for Cinemax Distribution Limited.",
+
+    five: "Eric is an ambitious, hardworking, solution-focused Logistics Officer with over 5 years of experience in Logistics. He is a team player, strong communicator with a customer- centric approach while ensuring seamless Logistics coordination and timely service delivery at a reduced cost. improving efficiency, result oriented.",
+
+    six: "As a Creative Designer at Cinemax Distribution Limited, Akerele Tunbosun takes on the exciting role of designing creatives for the company which could be used digitally or in prints. His role also comes with graphic video creations and editing.\n\n Tunbosun, a graduate from the Federal University of Agriculture Abeokuta (FUNAAB), has over 10 years of experience in creating appealing designs through drawings and sketches, computer graphics designs, and video creations.\n\nHe has over the years successfully worked with and for various establishments both in Nigeria and outside the country. Added to his expertise is his branding and content management skills.",
+  }
   return (
     <section className="contact-area contact-bg" style={{backgroundImage:'url("img/bg/contact_bg.jpg")'}}>
      <div className="container">
@@ -27,20 +41,8 @@ const About = () => {
          </div>
          <div className="col-xl-8 col-lg-7">
            <h1 className='owner-title'>Ope Ajayi<br/> Founder & CEO</h1>
-           <p className="owner-desc">
-           Ope Ajayi has over 21 years business management, entertainment, advisory and entrepreneurship experience. He has a proven track record of leading successful teams, managing start-ups, expansions, and turnarounds, raising capital and debt, growing revenue and market share, and forecasting industry trends. He spent 10 years in the financial services sector and a subsequent 11 years in the Cinemas & film Distribution. 
-           <br/> <br/>
-
-          He was an Executive Director at Genesis Cinemas where he was directly responsible for overseeing the cinema business and numerous projects including the building & fit out of 11 cinemas across the country and in Cameroon 
-          <br/> <br/>
-
-          A Co-Executive producer on the blockbuster films such as Brotherhood and Ada Omo Daddy, he is also the Executive Producer and Producer of The Party.
-          <br/> <br/>
-                    
-          Ope is the Founder, CEO of Cinemax Distribution Limited, A company set up to distribute and provide integrated services across the various film sub-sectors from fundraising, advisory, infrastructure, local and International content sales. 
-          <br/> <br/>
-
-          He is also an alumnus of the University of Lagos and the Lagos Business School
+           <p className="owner-desc" style={{ whiteSpace: "pre-wrap" }}>
+           <ReadMoreReact min={200} ideal={300} max={500} text={about.one} />
 
            </p>
          </div>
@@ -53,15 +55,8 @@ const About = () => {
          </div>
          <div className="col-xl-8 col-lg-7">
            <h1 className='owner-title'>Onyeka Nnama<br/> GM, Business Operations & Licensing</h1>
-           <p className="owner-desc">
-           Onyeka is the  GM  of  Business  Operations  Cinemax Distribution Limited. With a professional background in sales,  marketing, customer service, operations project management  across diverse industries. She is a goal-oriented individual with 11+  years of varied experiences to the business with a proven track  record.
-          <br/> <br/>
-
-          Roles she has held during her career  include Head of Operations, Operations Manager, Customer Service Manager and  Business Development manager
-          <br/> <br/>
-
-          She is currently the GM of Business Operations & Licensing for Cinemax  Distribution Limited
-
+           <p className="owner-desc" style={{ whiteSpace: "pre-wrap" }}>
+           <ReadMoreReact min={200} ideal={300} max={500} text={about.two} />
 
            </p>
          </div>
@@ -74,15 +69,8 @@ const About = () => {
          </div>
          <div className="col-xl-8 col-lg-7">
            <h1 className='owner-title'>Jadesola Koya<br/> Legal/HR Executive</h1>
-           <p className="owner-desc">
-           Jadesola is a dynamic and skilled legal professional with over 7 years of experience and a proven track record of success in a variety of practice areas. She is proficient in contract drafting, negotiation, and review, ensuring that all interests are protected and agreements are legally sound.
-          <br/> <br/>
-
-          Her core areas of practice include corporate law and commercial law, civil litigation, compliance and regulatory advisory, IT, fintech, and entertainment law.
-          <br/><br/>
-
-          She also has experience in human resource management, with her most recent role being a Legal/HR Executive. She has drafted and negotiated various international commercial contracts and advised on the corporate formation and governance of a new startup fintech company. Jadesola has a Master's degree (in view) from the University of Lagos.
-
+           <p className="owner-desc" style={{ whiteSpace: "pre-wrap" }}>
+           <ReadMoreReact min={200} ideal={300} max={500} text={about.three} />
 
            </p>
          </div>
@@ -95,13 +83,8 @@ const About = () => {
          </div>
          <div className="col-xl-8 col-lg-7">
            <h1 className='owner-title'>Ifeyinwa Okolie<br/> Accountant</h1>
-           <p className="owner-desc">
-           Ifeyinwa is a Result-oriented Accountant with over 4 years combined experience in financial accounting, financial management, audit and internal control. She is skilled in developing and maintaining accounting books, analyzing and preparing financial reports for management decision making.
-          <br/> <br/>
-
-          She has worked in organizations like West Gate Technologies and is in her final stage to become an Associate Member of the Institute of Chartered Accountants of Nigeria.
-          She is currently an Account executive for Cinemax Distribution Limited.
-
+           <p className="owner-desc" style={{ whiteSpace: "pre-wrap" }}>
+           <ReadMoreReact min={200} ideal={300} max={500} text={about.four} />
 
            </p>
          </div>
@@ -114,8 +97,9 @@ const About = () => {
          </div>
          <div className="col-xl-8 col-lg-7">
            <h1 className='owner-title'>Eric Okwara<br/> Logistics Officer</h1>
-           <p className="owner-desc">
-           Eric is an ambitious, hardworking, solution-focused Logistics Officer with over 5 years of experience in Logistics. He is a team player, strong communicator with a customer- centric approach while ensuring seamless Logistics coordination and timely service delivery at a reduced cost. improving efficiency, result oriented.
+           <p className="owner-desc" style={{ whiteSpace: "pre-wrap" }}>
+           <ReadMoreReact min={200} ideal={300} max={500} text={about.five} />
+
            </p>
          </div>
        </div>
@@ -127,14 +111,9 @@ const About = () => {
          </div>
          <div className="col-xl-8 col-lg-7">
            <h1 className='owner-title'>Tunbosun Akerele<br/> Creative Designer</h1>
-           <p className="owner-desc">
-           As a Creative Designer at Cinemax Distribution Limited, Akerele Tunbosun takes on the exciting role of designing creatives for the company which could be used digitally or in prints. His role also comes with graphic video creations and editing.
-           <br/><br />
+           <p className="owner-desc" style={{ whiteSpace: "pre-wrap" }}>
+           <ReadMoreReact min={200} ideal={300} max={500} text={about.six} />
 
-            Tunbosun, a graduate from the Federal University of Agriculture Abeokuta (FUNAAB), has over 10 years of experience in creating appealing designs through drawings and sketches, computer graphics designs, and video creations.
-            <br/><br />
-
-            He has over the years successfully worked with and for various establishments both in Nigeria and outside the country. Added to his expertise is his branding and content management skills.
            </p>
          </div>
        </div>
