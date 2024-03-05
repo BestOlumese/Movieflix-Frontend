@@ -18,106 +18,13 @@ const About = () => {
     five: "Eric is an ambitious, hardworking, solution-focused Logistics Officer with over 5 years of experience in Logistics. He is a team player, strong communicator with a customer- centric approach while ensuring seamless Logistics coordination and timely service delivery at a reduced cost. improving efficiency, result oriented.",
 
     six: "As a Creative Designer at Cinemax Distribution Limited, Akerele Tunbosun takes on the exciting role of designing creatives for the company which could be used digitally or in prints. His role also comes with graphic video creations and editing.\n\n Tunbosun, a graduate from the Federal University of Agriculture Abeokuta (FUNAAB), has over 10 years of experience in creating appealing designs through drawings and sketches, computer graphics designs, and video creations.\n\nHe has over the years successfully worked with and for various establishments both in Nigeria and outside the country. Added to his expertise is his branding and content management skills.",
+
+    seven: "Angel as an Admin Executive, is a key member of the company's administrative team. She provides support to senior management and ensures the smooth operation of daily office activities. With excellent organizational and communication skills,she plays a crucial role in maintaining an efficient and productive work environment. She is also responsible for managing various administrative tasks, such as organizing meetings, handling correspondence, and maintaining office supplies.",
   }
   return (
     <section className="contact-area contact-bg" style={{backgroundImage:'url("img/bg/contact_bg.jpg")'}}>
      <div className="container">
-      <div className="row story">
-        <h1 className="story-title">Our Story</h1>
-        <p className='story-desc'>
-        Cinemax Distribution Limited is a film distribution company aimed at providing integrated services to film makers and industry stakeholders as a whole.
-        <br /> <br />
-
-        We are the leading Co-Creator & Distributor of the Best African content, Positioning African Stories on the Global Stage, by partnering with the most inspiring creators, creating value for investors, partners & all stakeholders.
-
-        </p>
-      </div>
-      <h1 className="team">Our Awesome & Experienced Team</h1>
-       <div className="row">
-         <div className="col-xl-4 col-lg-5">
-           <div className="img-container">
-            <img className='owner' src='/img/about/owner.png' />
-           </div>
-         </div>
-         <div className="col-xl-8 col-lg-7">
-           <h1 className='owner-title'>Ope Ajayi<br/> Founder & CEO</h1>
-           <p className="owner-desc" style={{ whiteSpace: "pre-wrap" }}>
-           <ReadMoreReact min={200} ideal={300} max={500} text={about.one} />
-
-           </p>
-         </div>
-       </div>
-       <div className="row spacer">
-         <div className="col-xl-4 col-lg-5">
-           <div className="img-container">
-            <img className='owner' src='/img/about/owner-2.png' />
-           </div>
-         </div>
-         <div className="col-xl-8 col-lg-7">
-           <h1 className='owner-title'>Onyeka Nnama<br/> GM, Business Operations & Licensing</h1>
-           <p className="owner-desc" style={{ whiteSpace: "pre-wrap" }}>
-           <ReadMoreReact min={200} ideal={300} max={500} text={about.two} />
-
-           </p>
-         </div>
-       </div>
-       <div className="row spacer">
-         <div className="col-xl-4 col-lg-5">
-           <div className="img-container">
-            <img className='owner' src='/img/about/owner-3.png' />
-           </div>
-         </div>
-         <div className="col-xl-8 col-lg-7">
-           <h1 className='owner-title'>Jadesola Koya<br/> Legal/HR Executive</h1>
-           <p className="owner-desc" style={{ whiteSpace: "pre-wrap" }}>
-           <ReadMoreReact min={200} ideal={300} max={500} text={about.three} />
-
-           </p>
-         </div>
-       </div>
-       <div className="row spacer">
-         <div className="col-xl-4 col-lg-5">
-           <div className="img-container">
-            <img className='owner' src='/img/about/owner-4.png' />
-           </div>
-         </div>
-         <div className="col-xl-8 col-lg-7">
-           <h1 className='owner-title'>Ifeyinwa Okolie<br/> Accountant</h1>
-           <p className="owner-desc" style={{ whiteSpace: "pre-wrap" }}>
-           <ReadMoreReact min={200} ideal={300} max={500} text={about.four} />
-
-           </p>
-         </div>
-       </div>
-       <div className="row spacer">
-         <div className="col-xl-4 col-lg-5">
-           <div className="img-container">
-            <img className='owner' src='/img/about/owner-5.png' />
-           </div>
-         </div>
-         <div className="col-xl-8 col-lg-7">
-           <h1 className='owner-title'>Eric Okwara<br/> Logistics Officer</h1>
-           <p className="owner-desc" style={{ whiteSpace: "pre-wrap" }}>
-           <ReadMoreReact min={200} ideal={300} max={500} text={about.five} />
-
-           </p>
-         </div>
-       </div>
-       <div className="row spacer">
-         <div className="col-xl-4 col-lg-5">
-           <div className="img-container">
-            <img className='owner' src='/img/about/owner-6.png' />
-           </div>
-         </div>
-         <div className="col-xl-8 col-lg-7">
-           <h1 className='owner-title'>Tunbosun Akerele<br/> Creative Designer</h1>
-           <p className="owner-desc" style={{ whiteSpace: "pre-wrap" }}>
-           <ReadMoreReact min={200} ideal={300} max={500} text={about.six} />
-
-           </p>
-         </div>
-       </div>
-       <div className="row">
+     <div className="row">
         <div className="col-xl-12">
         <h1 className='service-title'>Our Services</h1>
         </div>
@@ -162,6 +69,120 @@ const About = () => {
                 <h3>Cinema Management Services</h3>
                 <p>We offer management services to independent cinemas on behalf of cinema owners.</p>
             </div>
+         </div>
+       </div>
+      <div className="row story">
+        <h1 className="story-title">Our Story</h1>
+        <p className='story-desc'>
+        Cinemax Distribution Limited is a film distribution company aimed at providing integrated services to film makers and industry stakeholders as a whole.
+        <br /> <br />
+
+        We are the leading Co-Creator & Distributor of the Best African content, Positioning African Stories on the Global Stage, by partnering with the most inspiring creators, creating value for investors, partners & all stakeholders.
+
+        </p>
+      </div>
+      <h1 className="team">Our Awesome & Experienced Team</h1>
+       <div className="row">
+         <div className="col-xl-4 col-lg-5">
+           <div className="img-container">
+            <img className='owner' src='/img/about/owner.png' />
+           </div>
+         </div>
+         <div className="col-xl-8 col-lg-7">
+           <h1 className='owner-title'>Ope Ajayi<br/> Founder & CEO</h1>
+           <p className="owner-desc" style={{ whiteSpace: "pre-wrap" }}>
+           <ReadMoreReact min={200} ideal={300} max={500} text={about.one} />
+
+           </p>
+         </div>
+       </div>
+       <div className="row spacer">
+         <div className="col-xl-4 col-lg-5">
+           <div className="img-container">
+            <img className='owner' src='/img/about/owner-2.png' />
+           </div>
+         </div>
+         <div className="col-xl-8 col-lg-7">
+           <h1 className='owner-title'>Onyeka Nnama<br/> GM, Business Operations & Licensing</h1>
+           <p className="owner-desc" style={{ whiteSpace: "pre-wrap" }}>
+           <ReadMoreReact min={200} ideal={300} max={500} text={about.two} />
+
+           </p>
+         </div>
+       </div>
+       <div className="row spacer">
+         <div className="col-xl-4 col-lg-5">
+           <div className="img-container">
+            {/* <img className='owner' src='/img/about/owner-3.png' /> */}
+            <p className='owner-desc'>N / A</p>
+           </div>
+         </div>
+         <div className="col-xl-8 col-lg-7">
+           <h1 className='owner-title'>Jadesola Koya<br/> Legal/HR Executive</h1>
+           <p className="owner-desc" style={{ whiteSpace: "pre-wrap" }}>
+           <ReadMoreReact min={200} ideal={300} max={500} text={about.three} />
+
+           </p>
+         </div>
+       </div>
+       <div className="row spacer">
+         <div className="col-xl-4 col-lg-5">
+           <div className="img-container">
+            {/* <img className='owner' src='/img/about/owner-4.png' /> */}
+            <p className='owner-desc'>N / A</p>
+           </div>
+         </div>
+         <div className="col-xl-8 col-lg-7">
+           <h1 className='owner-title'>Ifeyinwa Okolie<br/> Accountant</h1>
+           <p className="owner-desc" style={{ whiteSpace: "pre-wrap" }}>
+           <ReadMoreReact min={200} ideal={300} max={500} text={about.four} />
+
+           </p>
+         </div>
+       </div>
+       <div className="row spacer">
+         <div className="col-xl-4 col-lg-5">
+           <div className="img-container">
+            {/* <img className='owner' src='/img/about/owner-5.png' /> */}
+            <p className='owner-desc'>N / A</p>
+           </div>
+         </div>
+         <div className="col-xl-8 col-lg-7">
+           <h1 className='owner-title'>Eric Okwara<br/> Logistics Officer</h1>
+           <p className="owner-desc" style={{ whiteSpace: "pre-wrap" }}>
+           <ReadMoreReact min={200} ideal={300} max={500} text={about.five} />
+
+           </p>
+         </div>
+       </div>
+       <div className="row spacer">
+         <div className="col-xl-4 col-lg-5">
+           <div className="img-container">
+            {/* <img className='owner' src='/img/about/owner-6.png' /> */}
+            <p className='owner-desc'>N / A</p>
+           </div>
+         </div>
+         <div className="col-xl-8 col-lg-7">
+           <h1 className='owner-title'>Tunbosun Akerele<br/> Creative Designer</h1>
+           <p className="owner-desc" style={{ whiteSpace: "pre-wrap" }}>
+           <ReadMoreReact min={200} ideal={300} max={500} text={about.six} />
+
+           </p>
+         </div>
+       </div>
+       <div className="row spacer">
+         <div className="col-xl-4 col-lg-5">
+           <div className="img-container">
+            {/* <img className='owner' src='/img/about/owner-6.png' /> */}
+            <p className='owner-desc'>N / A</p>
+           </div>
+         </div>
+         <div className="col-xl-8 col-lg-7">
+           <h1 className='owner-title'>Angel Omoamila<br/> Administrative Executive</h1>
+           <p className="owner-desc" style={{ whiteSpace: "pre-wrap" }}>
+           <ReadMoreReact min={200} ideal={300} max={500} text={about.seven} />
+
+           </p>
          </div>
        </div>
      </div>

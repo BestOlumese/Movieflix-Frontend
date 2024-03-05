@@ -117,7 +117,7 @@ const SliderArea = () => {
                
                 <div className="banner-content">
                    
-                    <h2 className="title animate__animated animate__fadeInUp"  data-delay=".4s">{movie.title}</h2>
+                    <h2 className="title animate__animated animate__fadeInUp"  data-delay=".4s" style={{ fontSize: '50px' }}>{movie.title}</h2>
                   
                     
                     <div className="banner-meta animate__animated animate__fadeInUp"  data-delay=".6s">

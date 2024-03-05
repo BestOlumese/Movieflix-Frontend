@@ -48,13 +48,9 @@ const Footer = () => {
                         <li><Link to="/in-cinemas">In Cinemas</Link></li>
                         <li><Link to="/now-streaming">now streaming</Link></li>
                         <li><Link to="/coming-soon">coming soon</Link></li>
+                        <li><Link to="/about-us">About Us</Link></li>
+                        <li><Link to="/contact">contacts</Link></li>
                       </ul>
-                      <div className="footer-search">
-                        <form onSubmit={handleSubmit}>
-                          <input type="text" id="search" name="search" placeholder="Find Favorite Movie" onChange={handleInputChange} />
-                          <button><i className="fas fa-search" /></button>
-                        </form>
-                      </div>
                     </nav>
                   </div>
                 </div>
@@ -62,16 +58,15 @@ const Footer = () => {
             </div>
             <div className="footer-quick-link-wrap">
               <div className="row align-items-center">
-                <div className="col-md-7">
-                  {/* <div className="quick-link-list">
-                    <ul>
-                      <li><a href="/#">FAQ</a></li>
-                      <li><a href="/#">Help Center</a></li>
-                      <li><a href="/#">Terms of Use</a></li>
-                      <li><a href="/#">Privacy</a></li>
-                    </ul>
-                  </div> */}
+                <div className="col-md-4">
+                <div className="footer-search">
+                  <form onSubmit={handleSubmit}>
+                    <input type="text" id="search" name="search" placeholder="Find Favorite Movie" onChange={handleInputChange} />
+                    <button><i className="fas fa-search" /></button>
+                  </form>
                 </div>
+                </div>
+                <div className="col-md-3"></div>
                 <div className="col-md-5">
                   <div className="footer-social">
                     <ul>

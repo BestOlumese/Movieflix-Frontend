@@ -3089,8 +3089,7 @@ label {
 }
 
 .service-title {
-    margin-top: 100px !important;
-    margin-bottom: 50px !important;
+    margin-bottom: 30px !important;
     font-weight: 500;
     font-size: 45px;
     text-align: center;
@@ -3109,7 +3108,7 @@ label {
 .box > p {
     font-size: 18px !important;
     margin-top: 20px !important;
-    text-align: center;
+    text-align: justify;
     font-weight: 400;
 }
 
@@ -3128,6 +3127,7 @@ label {
 }
 
 .story {
+    margin-top: 100px !important;
     padding: 0 20px !important;
 }
 
