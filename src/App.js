@@ -13,6 +13,7 @@ import { createBrowserHistory } from 'history';
 import ComingSoon from './pages/ComingSoon';
 import AboutPage from './pages/AboutPage';
 import NotFound from './pages/NotFound';
+import ArchivesPage from './pages/ArchivesPage';
 
 
 export const history = createBrowserHistory({ forceRefresh: true });
@@ -55,8 +56,8 @@ function App() {
             <ComingSoon/>
 
           </Route>
-          <Route exact={true} path="/pricing">
-            <Pricing/>
+          <Route exact={true} path="/archives">
+            <ArchivesPage />
 
           </Route>
 
