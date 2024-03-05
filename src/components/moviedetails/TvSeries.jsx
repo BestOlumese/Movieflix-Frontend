@@ -7,6 +7,7 @@ const TvSerise = () => {
   const apiLink = process.env.REACT_APP_API_LINK;
   function handleChange (value){
     setNext(`${apiLink}/api/v1/movie/streaming-now/?category=${id}&page=${value}`);
+    console.log(next);
   };
 
   const [id, setID] = useState([]);
@@ -16,13 +17,18 @@ const TvSerise = () => {
   const [category, setCategory] = useState([]);
   const [page, setPage] = useState(1);
   const [count, setCount] = useState([]);
+  const [dcount, setDCount] = useState([]);
   const [next, setNext] = useState(`${apiLink}/api/v1/movie/streaming-now/?category=${id}&page=${page}`);
   useEffect(() => {
     fetch(next)
     .then(response => response.json())
-    .then(data => { setItems(data.results); setdItems(data.results); setCount(data.count); })
+    .then(data => { setdItems(data.results); setItems(data.results); setCount(data.count); setDCount(data.count); })
     .catch(err => console.log(err))
   }, [next])
+  useEffect(() => {
+    console.log(id);
+    console.log(catid);
+  }, [items]) 
   useEffect(() => {
     fetch(`${apiLink}/api/v1/category/`)
     .then(response => response.json())
@@ -55,12 +61,12 @@ const TvSerise = () => {
       <div className="row justify-content-center">
         <div className="col-lg-8">
           <div className="tr-movie-menu2-active text-center">
-            <button className={(items == ditems) ? 'active' : ''} data-filter="*" onClick={()=> {setItems(ditems); setCatID(null);}}>All Movies</button>
+            <button className={(catid.length == 0) ? 'active' : ''} data-filter="*" onClick={()=> {setItems(ditems); setCatID([]); setID([]); setCount(dcount)}}>All Movies</button>
             {
               category.map((elem) => {
-                const { id, name } = elem;
+                const { id: did, name } = elem;
                 return (
-                  <button className={(id == catid) ? 'active' : ''}  data-filter=".cat-two" onClick={()=> {setID(id); setCatID(id)}}>{name}</button>
+                  <button className={(did == catid && id.length != 0) ? 'active' : ''}  data-filter=".cat-two" onClick={()=> {setID(did); setCatID(did)}}>{name}</button>
                 );
               })
             }

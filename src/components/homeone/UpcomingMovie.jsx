@@ -50,12 +50,12 @@ const UpcomingMovie = () => {
       <div className="row justify-content-center">
         <div className="col-lg-8">
           <div className="tr-movie-menu2-active text-center">
-            <button className={(items == ditems) ? 'active' : ''} data-filter="*" onClick={()=> {setItems(ditems); setCatID(null);}}>All Movies</button>
+            <button className={(catid.length == 0) ? 'active' : ''} data-filter="*" onClick={()=> {setItems(ditems); setCatID([]); setID([]); setCount(dcount)}}>All Movies</button>
             {
               category.map((elem) => {
-                const { id, name } = elem;
+                const { id: did, name } = elem;
                 return (
-                  <button className={(id == catid) ? 'active' : ''}  data-filter=".cat-two" onClick={()=> {setID(id); setCatID(id)}}>{name}</button>
+                  <button className={(did == catid && id.length != 0) ? 'active' : ''}  data-filter=".cat-two" onClick={()=> {setID(did); setCatID(did)}}>{name}</button>
                 );
               })
             }
