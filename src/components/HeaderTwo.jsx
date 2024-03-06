@@ -118,7 +118,7 @@ const HeaderTwo = ({ pagemenu }) => {
                     <li className={`${(pagemenu == 'coming-soon') ? 'active' : ''} menu-item-has-children`}><Link to='/coming-soon'>Coming Soon</Link></li>
                     <li className={`${(pagemenu == 'archives') ? 'active' : ''} menu-item-has-children`}><Link to='/archives'>Archives</Link></li>
                     <li className={`${(pagemenu == 'about-us') ? 'active' : ''} menu-item-has-children`}><Link to='/about-us'>About Us</Link></li>
-                    <li className={`${(pagemenu == 'contact') ? 'active' : ''} menu-item-has-children`}><Link to='/contact'>contacts</Link></li>
+                    <li className={`${(pagemenu == 'contact') ? 'active' : ''} menu-item-has-children`}><Link to='/contact'>contact</Link></li>
                   </ul>
                 </div>
                 <div className="header-action d-none d-md-block">
