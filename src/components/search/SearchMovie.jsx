@@ -19,11 +19,15 @@ const SearchMovie = () => {
     const [count, setCount] = useState([]);
     const [next, setNext] = useState(`${apiLink}/api/v1/movie/search?search=${data}&page=${page}`);
     useEffect(() => {
+      setNext(`${apiLink}/api/v1/movie/search?search=${data}&page=${page}`)
+    }, [data])
+
+    useEffect(() => {
       fetch(next)
       .then(response => response.json())
       .then(data => {setItems(data.results); setCount(data.count);})
       .catch(err => console.log(err))
-    }, [next, data])
+    }, [next])
    
     return (
       <section className="ucm-area ucm-bg" style={{backgroundImage:'url("../../img/bg/ucm_bg.jpg")'}}>
