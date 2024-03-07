@@ -23,7 +23,7 @@ const SearchMovie = () => {
       .then(response => response.json())
       .then(data => {setItems(data.results); setCount(data.count);})
       .catch(err => console.log(err))
-    }, [next])
+    }, [next, data])
    
     return (
       <section className="ucm-area ucm-bg" style={{backgroundImage:'url("../../img/bg/ucm_bg.jpg")'}}>
