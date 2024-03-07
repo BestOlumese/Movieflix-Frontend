@@ -62,10 +62,21 @@ const MovieDetail = () => {
             <div className="movie-details-prime">
               <ul>
                 <li className="streaming">
-                  <h6><a href={movie.netflix_url}>Nexflix Link</a></h6>
-                </li>&nbsp;&nbsp;&nbsp;
-                <li className="streaming">
-                  <h6><a href={movie.prime_url}>Prime Video Link</a></h6>
+                  {
+                    (movie.netflix_url != null) ?
+                    (<h6><a href={movie.netflix_url}>Netflix Link</a></h6>)
+                    : ''
+                  }
+                  {
+                    (movie.prime_url != null) ?
+                    (<h6><a href={movie.prime_url}>Prime Video Link</a></h6>)
+                    : ''
+                  }
+                  {
+                    (movie.showmax_url != null) ?
+                    (<h6><a href={movie.showmax_url}>Showmax Link</a></h6>)
+                    : ''
+                  }
                 </li>
                 <li className="watch"><a href={movie.youtube_url} className="btn popup-video"><i className="fas fa-play" /> Watch Trailer</a></li>
               </ul>
