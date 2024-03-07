@@ -63,17 +63,17 @@ const MovieDetail = () => {
               <ul>
                 <li className="streaming">
                   {
-                    (movie.netflix_url != null) ?
+                    (movie.netflix_url != '') ?
                     (<h6><a href={movie.netflix_url}>Netflix Link</a></h6>)
                     : ''
                   }
                   {
-                    (movie.prime_url != null) ?
+                    (movie.prime_url != '') ?
                     (<h6><a href={movie.prime_url}>Prime Video Link</a></h6>)
                     : ''
                   }
                   {
-                    (movie.showmax_url != null) ?
+                    (movie.showmax_url != '') ?
                     (<h6><a href={movie.showmax_url}>Showmax Link</a></h6>)
                     : ''
                   }
