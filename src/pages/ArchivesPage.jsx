@@ -6,9 +6,6 @@ import Archive from '../components/archives/Archive'
 
 const ArchivesPage = () => {
   const [pagemenu, setPageMenu] = useState('archives');
-  useEffect(() => {
-    window.scrollTo(0, 0)
-  }, [pagemenu])
   return (
     <div>
         <HeaderTwo pagemenu={pagemenu}/>

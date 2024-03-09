@@ -6,9 +6,6 @@ import TvSerise from '../components/moviedetails/TvSeries'
 
 const TvSeries = () => {
   const [pagemenu, setPageMenu] = useState('now-streaming');
-  useEffect(() => {
-    window.scrollTo(0, 0)
-  }, [pagemenu])
   return (
     <div>
         <HeaderTwo pagemenu={pagemenu}/>

@@ -5,9 +5,6 @@ import Map from '../components/contacts/Map'
 import Footer from '../components/Footer'
 import HeaderTwo from '../components/HeaderTwo'
 const ContactPage = () => {
-  useEffect(() => {
-    window.scrollTo(0, 0)
-  }, [pagemenu])
   const [pagemenu, setPageMenu] = useState('contact');
   return (
    <>

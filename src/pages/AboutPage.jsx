@@ -6,9 +6,6 @@ import HeaderTwo from '../components/HeaderTwo'
 
 const AboutPage = () => {
   const [pagemenu, setPageMenu] = useState('about-us');
-  useEffect(() => {
-    window.scrollTo(0, 0)
-  }, [pagemenu])
   return (
     <>
         <HeaderTwo pagemenu={pagemenu}/>

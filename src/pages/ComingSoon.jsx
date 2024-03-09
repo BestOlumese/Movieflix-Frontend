@@ -6,9 +6,6 @@ import ComingSoonArea from '../components/comingsoon/ComingSoonArea'
 
 const ComingSoon = () => {
     const [pagemenu, setPageMenu] = useState('coming-soon');
-    useEffect(() => {
-        window.scrollTo(0, 0)
-      }, [pagemenu])
     return (
         <div>
             <HeaderTwo pagemenu={pagemenu}/>
