@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import SliderArea from '../components/hometwo/SliderArea'
 import HeaderTwo from '../components/HeaderTwo';
 import TvSerise from '../components/homeone/TvSerise';

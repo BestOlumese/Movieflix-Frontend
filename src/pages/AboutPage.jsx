@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Breadcrumb from '../components/Breadcrumb'
 import About from '../components/about/About'
 import Footer from '../components/Footer'

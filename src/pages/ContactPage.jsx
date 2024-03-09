@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Breadcrumb from '../components/Breadcrumb'
 import Contacts from '../components/contacts/Contacts'
 import Map from '../components/contacts/Map'

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Footer from '../components/Footer'
 import HeaderTwo from '../components/HeaderTwo'
 import Breadcrumb from '../components/Breadcrumb'
