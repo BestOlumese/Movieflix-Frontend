@@ -114,7 +114,7 @@ const About = () => {
          <div className="col-xl-4 col-lg-5">
            <div className="img-container">
             {/* <img className='owner' src='/img/about/owner-3.png' /> */}
-            <p className='owner-desc'>N / A</p>
+            <p className='owner-desc'></p>
            </div>
          </div>
          <div className="col-xl-8 col-lg-7">
@@ -129,7 +129,7 @@ const About = () => {
          <div className="col-xl-4 col-lg-5">
            <div className="img-container">
             {/* <img className='owner' src='/img/about/owner-4.png' /> */}
-            <p className='owner-desc'>N / A</p>
+            <p className='owner-desc'></p>
            </div>
          </div>
          <div className="col-xl-8 col-lg-7">
@@ -144,7 +144,7 @@ const About = () => {
          <div className="col-xl-4 col-lg-5">
            <div className="img-container">
             {/* <img className='owner' src='/img/about/owner-5.png' /> */}
-            <p className='owner-desc'>N / A</p>
+            <p className='owner-desc'></p>
            </div>
          </div>
          <div className="col-xl-8 col-lg-7">
@@ -159,7 +159,7 @@ const About = () => {
          <div className="col-xl-4 col-lg-5">
            <div className="img-container">
             {/* <img className='owner' src='/img/about/owner-6.png' /> */}
-            <p className='owner-desc'>N / A</p>
+            <p className='owner-desc'></p>
            </div>
          </div>
          <div className="col-xl-8 col-lg-7">
@@ -174,7 +174,7 @@ const About = () => {
          <div className="col-xl-4 col-lg-5">
            <div className="img-container">
             {/* <img className='owner' src='/img/about/owner-6.png' /> */}
-            <p className='owner-desc'>N / A</p>
+            <p className='owner-desc'></p>
            </div>
          </div>
          <div className="col-xl-8 col-lg-7">

@@ -138,7 +138,7 @@ const SliderArea = () => {
                  
                   
                   
-                    <Link to={"/movie-details/"+movie.slug} className="banner-btn btn popup-video"   data-animation="fadeInUp" data-delay=".8s"><i className="fas fa-play" /> Watch Now</Link>
+                    <Link to={"/movie-details/"+movie.slug} className="banner-btn btn popup-video"   data-animation="fadeInUp" data-delay=".8s"><i className="fas fa-play" /> Movie Details</Link>
                   
 
                     </div>
