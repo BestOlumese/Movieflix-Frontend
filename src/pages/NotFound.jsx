@@ -5,6 +5,9 @@ import Breadcrumb from '../components/Breadcrumb'
 import SearchMovie from '../components/search/SearchMovie'
 
 const NotFound = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   return (
     <div>
      <HeaderTwo/>

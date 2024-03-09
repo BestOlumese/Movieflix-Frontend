@@ -20,10 +20,7 @@ export const history = createBrowserHistory({ forceRefresh: true });
 
 function App() {
 
-  useEffect(() => {
-    window.scrollTo(0, 0)
-  }, [])
-
+  
   
   useEffect(()=>{
     function preloader() {

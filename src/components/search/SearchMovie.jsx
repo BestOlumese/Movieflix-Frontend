@@ -6,6 +6,9 @@ import { Pagination } from 'antd';
 import { useParams } from 'react-router-dom/cjs/react-router-dom.min';
 
 const SearchMovie = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [search])
   const apiLink = process.env.REACT_APP_API_LINK;
   const {search} = useParams();
   const data = search;

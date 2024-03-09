@@ -8,6 +8,10 @@ import Footer from '../components/Footer';
 import GalleryArea from '../components/hometwo/GalleryArea';
 
 const HomeTwo = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [pagemenu])
+
   const [pagemenu, setPageMenu] = useState('home');
   return (
         <>
