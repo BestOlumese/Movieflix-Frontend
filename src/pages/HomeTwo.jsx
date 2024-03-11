@@ -6,6 +6,7 @@ import UpcomingMovie from '../components/homeone/UpcomingMovie';
 import ComingSoon from '../components/homeone/ComingSoon';
 import Footer from '../components/Footer';
 import GalleryArea from '../components/hometwo/GalleryArea';
+import Newsletter from '../components/movie/Newsletter';
 
 const HomeTwo = () => {
   const [pagemenu, setPageMenu] = useState('home');
@@ -17,6 +18,7 @@ const HomeTwo = () => {
                 <UpcomingMovie/>
                 <TvSerise/>
                 <ComingSoon/>
+                <Newsletter />
             </main>
                 <Footer/>
         </>

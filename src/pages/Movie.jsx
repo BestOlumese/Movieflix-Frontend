@@ -6,9 +6,6 @@ import MovieArea from '../components/movie/MovieArea'
 import Newsletter from '../components/movie/Newsletter'
 
 const Movie = () => {
-  useEffect(() => {
-    window.scrollTo(0, 0)
-  }, [pagemenu])
   const [pagemenu, setPageMenu] = useState('in-cinemas');
   return (
     <div>
@@ -16,6 +13,7 @@ const Movie = () => {
     <main>
         <Breadcrumb/>
         <MovieArea/>
+        <Newsletter />
     </main>
      <Footer/>
     </div>

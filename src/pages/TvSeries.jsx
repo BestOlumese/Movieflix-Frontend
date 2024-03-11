@@ -3,6 +3,7 @@ import Footer from '../components/Footer'
 import HeaderTwo from '../components/HeaderTwo'
 import Breadcrumb from '../components/tv/Breadcrumb'
 import TvSerise from '../components/moviedetails/TvSeries'
+import Newsletter from '../components/movie/Newsletter'
 
 const TvSeries = () => {
   const [pagemenu, setPageMenu] = useState('now-streaming');
@@ -12,6 +13,7 @@ const TvSeries = () => {
         <main>
             <Breadcrumb/>
             <TvSerise/>
+            <Newsletter />
         </main>
         <Footer/>
     </div>

@@ -61,13 +61,13 @@ const Contacts = () => {
                <form onSubmit={handleSubmit}>
                  <div className="row">
                    <div className='col-md-6'>
-                     <input type="text" name='name' placeholder="You Name *" onChange={handleChange} />
+                     <input type="text" name='name' placeholder="You Name *" value={form.name} onChange={handleChange} />
                    </div>
                    <div className="col-md-6">
-                     <input type="email" name='email' placeholder="You  Email *" onChange={handleChange} />
+                     <input type="email" name='email' placeholder="You  Email *" value={form.email} onChange={handleChange} />
                    </div>
                  </div>
-                 <textarea name="message" placeholder="Type Your Message..." onChange={handleChange} defaultValue={""} />
+                 <textarea name="message" placeholder="Type Your Message..." value={form.message} onChange={handleChange} defaultValue={""} />
                  <button className="btn">Send Message</button>
                </form>
              </div>

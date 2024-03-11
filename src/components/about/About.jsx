@@ -91,7 +91,7 @@ const About = () => {
          <div className="col-xl-8 col-lg-7">
            <h1 className='owner-title'>Ope Ajayi<br/> Founder & CEO</h1>
            <p className="owner-desc" style={{ whiteSpace: "pre-wrap" }}>
-           <ReadMoreReact min={200} ideal={300} max={500} text={about.one} />
+           {about.one}
 
            </p>
          </div>
