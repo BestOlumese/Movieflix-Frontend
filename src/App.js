@@ -14,6 +14,7 @@ import ComingSoon from './pages/ComingSoon';
 import AboutPage from './pages/AboutPage';
 import NotFound from './pages/NotFound';
 import ArchivesPage from './pages/ArchivesPage';
+import ScrollToTop from './pages/ScrollToTop';
 
 
 export const history = createBrowserHistory({ forceRefresh: true });
@@ -35,7 +36,7 @@ function App() {
   return (
     <div className="App">
      <Router history={history}>
-       
+       <ScrollToTop />
         <Switch>
 
           <Route exact={true} path="/">
