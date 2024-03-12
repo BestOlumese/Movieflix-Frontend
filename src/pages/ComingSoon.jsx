@@ -13,7 +13,6 @@ const ComingSoon = () => {
             <main>
                 <Breadcrumb/>
                 <ComingSoonArea/>
-                <Newsletter />
             </main>
             <Footer/>
         </div>

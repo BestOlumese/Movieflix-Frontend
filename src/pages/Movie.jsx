@@ -13,7 +13,6 @@ const Movie = () => {
     <main>
         <Breadcrumb/>
         <MovieArea/>
-        <Newsletter />
     </main>
      <Footer/>
     </div>

@@ -13,7 +13,6 @@ const TvSeries = () => {
         <main>
             <Breadcrumb/>
             <TvSerise/>
-            <Newsletter />
         </main>
         <Footer/>
     </div>

@@ -113,7 +113,7 @@ const About = () => {
        <div className="row spacer">
          <div className="col-xl-4 col-lg-5">
            <div className="img-container">
-            {/* <img className='owner' src='/img/about/owner-3.png' /> */}
+            <img className='owner' src='/img/about/owner-3.png' />
             <p className='owner-desc'></p>
            </div>
          </div>
@@ -128,7 +128,7 @@ const About = () => {
        <div className="row spacer">
          <div className="col-xl-4 col-lg-5">
            <div className="img-container">
-            {/* <img className='owner' src='/img/about/owner-4.png' /> */}
+            <img className='owner' src='/img/about/owner-4.png' />
             <p className='owner-desc'></p>
            </div>
          </div>
