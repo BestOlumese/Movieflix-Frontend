@@ -34,7 +34,7 @@ const Newsletter = () => {
           </div>
           <div className="col-lg-6">
             <form onSubmit={handleSubmit} className="newsletter-form">
-              <input type="email" required placeholder="Enter your email" onChange={(e) => setNewsLetter(e.target.value)} />
+              <input type="email" required placeholder="Enter your email" value={newsletter} onChange={(e) => setNewsLetter(e.target.value)} />
               <button className="btn">sign up</button>
             </form>
           </div>
