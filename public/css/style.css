@@ -3048,14 +3048,14 @@ label {
 }
 
 .img-container {
-    border: 2px solid #fff;
-    padding: 10px;
-    border-radius: 20px;
+    /* border: 2px solid #fff; */
+    /* padding: 10px; */
+    /* border-radius: 20px; */
 }
 
 .img-container > img.owner {
     width: 100%;
-    border-radius: 10px;
+    /* border-radius: 10px; */
 }
 
 .story-title  {
