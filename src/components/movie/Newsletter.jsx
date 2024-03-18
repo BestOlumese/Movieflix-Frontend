@@ -28,7 +28,7 @@ const Newsletter = () => {
         <div className="row align-items-center">
           <div className="col-lg-6">
             <div className="newsletter-content">
-              <h4>Get movie update.</h4>
+              <h4>Get movie updates.</h4>
               <p>Enter your email to signup for newsletter.</p>
             </div>
           </div>
