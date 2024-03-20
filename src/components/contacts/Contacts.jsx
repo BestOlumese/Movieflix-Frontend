@@ -78,7 +78,6 @@ const Contacts = () => {
              <h5 className="title">Information</h5>
            </div>
            <div className="contact-info-wrap">
-             <p><span>Find solutions :</span> to common problems, or get help from a support agent industry's standard .</p>
              <div className="contact-info-list">
                <ul>
                  <li>

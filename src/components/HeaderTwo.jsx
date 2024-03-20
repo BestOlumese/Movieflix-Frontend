@@ -145,11 +145,11 @@ const HeaderTwo = ({ pagemenu }) => {
                 </div>
                 <div className="social-links">
                   <ul className="clearfix">
-                    <li><a href="/#"><span className="fab fa-twitter" /></a></li>
-                    <li><a href="/#"><span className="fab fa-facebook-square" /></a></li>
-                    <li><a href="/#"><span className="fab fa-pinterest-p" /></a></li>
-                    <li><a href="/#"><span className="fab fa-instagram" /></a></li>
-                    <li><a href="/#"><span className="fab fa-youtube" /></a></li>
+                  <li><a href="https://www.facebook.com/cinemaxdr" target='_blank'><i className="fab fa-facebook-f" /></a></li>
+                      <li><a href="https://twitter.com/cinemaxng" target='_blank'><i className="fab fa-twitter" /></a></li>
+                      <li><a href="https://www.instagram.com/cinemaxng" target='_blank'><i className="fab fa-instagram" /></a></li>
+                      <li><a href="https://www.linkedin.com/in/cinemax-distribution-6bbb73263?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target='_blank'><i className="fab fa-linkedin-in" /></a></li>
+                      <li><a href="https://www.youtube.com/@CinemaxDistributionLimited" target='_blank'><i className="fab fa-youtube" /></a></li>
                   </ul>
                 </div>
               </nav>

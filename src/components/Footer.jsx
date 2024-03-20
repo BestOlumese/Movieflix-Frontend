@@ -75,6 +75,7 @@ const Footer = () => {
                       <li><a href="https://twitter.com/cinemaxng" target='_blank'><i className="fab fa-twitter" /></a></li>
                       <li><a href="https://www.instagram.com/cinemaxng" target='_blank'><i className="fab fa-instagram" /></a></li>
                       <li><a href="https://www.linkedin.com/in/cinemax-distribution-6bbb73263?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target='_blank'><i className="fab fa-linkedin-in" /></a></li>
+                      <li><a href="https://www.youtube.com/@CinemaxDistributionLimited" target='_blank'><i className="fab fa-youtube" /></a></li>
                     </ul>
                   </div>
                 </div>
