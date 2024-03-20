@@ -25,9 +25,8 @@ const Contacts = () => {
       'template_zlo1vft',
       {
         from_name: form.name,
+        from_email: form.email,
         to_name: 'Cinemaxdr',
-        form_email: form.email,
-        to_email: 'hello@cinemaxdr.com',
         message: form.message,
       },
       'lWMef-ygvCvw9wNCn'
