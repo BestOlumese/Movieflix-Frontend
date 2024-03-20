@@ -44,13 +44,13 @@ const Footer = () => {
                   <div className="footer-menu">
                     <nav>
                       <ul className="navigation">
-                        <li><Link to="/">Home</Link></li>
+                        {/* <li><Link to="/">Home</Link></li>
                         <li><Link to="/in-cinemas">In Cinemas</Link></li>
                         <li><Link to="/now-streaming">now streaming</Link></li>
-                        <li><Link to="/coming-soon">coming soon</Link></li>
+                        <li><Link to="/coming-soon">coming soon</Link></li> */}
                         <li><Link to="/archives">Archives</Link></li>
-                        <li><Link to="/about-us">About Us</Link></li>
-                        <li><Link to="/contact">contact</Link></li>
+                        {/* <li><Link to="/about-us">About Us</Link></li>
+                        <li><Link to="/contact">contact</Link></li> */}
                       </ul>
                     </nav>
                   </div>
