@@ -42,7 +42,7 @@ const About = () => {
             <div className="box">
                 <CiVideoOn style={{fontSize: '70px', marginBottom: '20px'}}/>
                 <h3>Theatrical Distribution</h3>
-                <p>We work with filmakers to release films to the big screen across West Africa & Central Africa. This cover marketing, Liason with Cinemas, Reporting, Collections.</p>
+                <p>We work with film makers to release films to the big screen across West Africa & Central Africa. This cover marketing, Liason with Cinemas, Reporting, Collections.</p>
             </div>
          </div>
          <div className="col-xl-4 col-lg-4">
