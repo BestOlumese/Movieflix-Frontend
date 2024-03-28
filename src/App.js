@@ -22,7 +22,7 @@ export const history = createBrowserHistory({ forceRefresh: true });
 function App() {
 
   
-  
+  // comment
   useEffect(()=>{
     function preloader() {
       $('#preloader').delay(0).fadeOut();
