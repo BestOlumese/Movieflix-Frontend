@@ -21,15 +21,15 @@ const Contacts = () => {
     e.preventDefault()
     setLoading(true)
     emailjs.send(
-      'service_e1j9rk7',
-      'template_zlo1vft',
+      'service_y7sejwg',
+      'template_6cye0ha',
       {
         from_name: form.name,
         from_email: form.email,
         to_name: 'Cinemaxdr',
         message: form.message,
       },
-      'lWMef-ygvCvw9wNCn'
+      '4MhwbCYsvdxL24VeC'
     )
     .then(() => {
       setLoading(false);
