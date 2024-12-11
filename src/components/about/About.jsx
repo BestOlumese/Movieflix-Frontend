@@ -128,21 +128,6 @@ const About = () => {
        <div className="row spacer">
          <div className="col-xl-4 col-lg-5">
            <div className="img-container">
-            <img className='owner' src='/img/about/owner-4.png' />
-            <p className='owner-desc'></p>
-           </div>
-         </div>
-         <div className="col-xl-8 col-lg-7">
-           <h1 className='owner-title'>Ifeyinwa Okolie<br/> Accountant</h1>
-           <p className="owner-desc" style={{ whiteSpace: "pre-wrap" }}>
-           <ReadMoreReact min={200} ideal={300} max={500} text={about.four} />
-
-           </p>
-         </div>
-       </div>
-       <div className="row spacer">
-         <div className="col-xl-4 col-lg-5">
-           <div className="img-container">
             <img className='owner' src='/img/about/owner-5.png' />
             <p className='owner-desc'></p>
            </div>
