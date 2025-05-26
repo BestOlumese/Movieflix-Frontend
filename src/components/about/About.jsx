@@ -172,8 +172,7 @@ const About = () => {
            </p>
          </div>
        </div>
-     </div>
-      <div className="row spacer">
+       <div className="row spacer">
          <div className="col-xl-4 col-lg-5">
            <div className="img-container">
             <img className='owner' src='/img/about/owner-8.png' />
@@ -189,6 +188,7 @@ const About = () => {
          </div>
        </div>
      </div>
+      
      
            {/* <p className='owner-desc'>
            Cinemax Distribution Limited is a film distribution company aimed at providing integrated services to film makers and industry stakeholders as a whole.
