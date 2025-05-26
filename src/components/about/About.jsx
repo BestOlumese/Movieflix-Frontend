@@ -20,6 +20,8 @@ const About = () => {
     six: "As a Creative Designer at Cinemax Distribution Limited, Akerele Tunbosun takes on the exciting role of designing creatives for the company which could be used digitally or in prints. His role also comes with graphic video creations and editing.\n\n Tunbosun, a graduate from the Federal University of Agriculture Abeokuta (FUNAAB), has over 10 years of experience in creating appealing designs through drawings and sketches, computer graphics designs, and video creations.\n\nHe has over the years successfully worked with and for various establishments both in Nigeria and outside the country. Added to his expertise is his branding and content management skills.",
 
     seven: "Angel as an Admin Executive, is a key member of the company's administrative team. She provides support to senior management and ensures the smooth operation of daily office activities. With excellent organizational and communication skills,she plays a crucial role in maintaining an efficient and productive work environment. She is also responsible for managing various administrative tasks, such as organizing meetings, handling correspondence, and maintaining office supplies.",
+
+    eight: "Juliet is a creative and analytical digital marketing executive with years of comprehensive experience in developing and executing successful digital marketing strategies. She has a track record in enhancing brand visibility and driving online engagement through innovative campaigns across various digital platforms.\n\nSkilled in SEO, PPC, social media marketing, content creation, and email marketing, with a strong ability to analyze data and optimize performance for maximum ROI. Excellent communication and project management skills, with a passion for staying ahead of industry trends and leveraging new technologies to achieve business objectives.\n\nShe is a graduate of the University of Lagos and holds certifications in Digital Marketing from META, Google Digital Garage, and various other reputable organizations.\n\nCurrently, she's also pursuing a Master's degree in Digital Marketing and Business Transformation at Rome Business School."
   }
   return (
     <section className="contact-area contact-bg" style={{backgroundImage:'url("img/bg/contact_bg.jpg")'}}>
@@ -166,6 +168,22 @@ const About = () => {
            <h1 className='owner-title'>Angel Omoamila<br/> Administrative Executive</h1>
            <p className="owner-desc" style={{ whiteSpace: "pre-wrap" }}>
            <ReadMoreReact min={200} ideal={300} max={500} text={about.seven} />
+
+           </p>
+         </div>
+       </div>
+     </div>
+      <div className="row spacer">
+         <div className="col-xl-4 col-lg-5">
+           <div className="img-container">
+            <img className='owner' src='/img/about/owner-8.png' />
+            <p className='owner-desc'></p>
+           </div>
+         </div>
+         <div className="col-xl-8 col-lg-7">
+           <h1 className='owner-title'>Juliet Peter<br/> Digital Marketing Executive</h1>
+           <p className="owner-desc" style={{ whiteSpace: "pre-wrap" }}>
+           <ReadMoreReact min={200} ideal={300} max={500} text={about.eight} />
 
            </p>
          </div>
